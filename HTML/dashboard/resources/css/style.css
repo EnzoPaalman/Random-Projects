@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: sans-serif;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    /* align */
+    justify-content: center;
+    align-items: center;
+
+    background: blue;
+}
+
+.card {
+    flex-shrink: 0;
+
+    width: 40rem;
+    height: 40rem;
+
+    background: red;
+    border-radius: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.card {
+    appearance: none;
+}
+
+.slider::-moz-range-thumb {
+    cursor: ew-resize;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+}
+
+.btn--start {
+    color: green;
+}
+
+.btn--stop {
+    color: red;
+}
+
+.btn--reset {
+    color: purple;
+}

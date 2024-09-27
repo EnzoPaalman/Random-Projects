@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    font-family: sans-serif;
+    background: red;
+    padding:4rem;
+}
+
+.cards{
+    height: 89vh;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    gap: 2rem;
+}
+
+.card{
+    list-style: none;
+    background: rgb(233, 252, 252);
+    border-radius: 1rem;
+    box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.card--first{
+    grid-row: 1 / 7;
+    grid-column: 1 / 5;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.card--first > input{
+    width:70%;
+    height:4rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    padding-left: 2rem
+}
+
+.card--second{
+    grid-row:  1 / 7;
+    grid-column: 5 / 9;
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+
+
+.card--third{
+    grid-row: 7 / 13;
+    grid-column: 1 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.card--third > img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.card--third > button{
+    width: 15rem;
+    height: 6rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    border: none;
+    background: #ee1515;
+    color: #eee;
+    border-radius: 0.5rem;
+}
+
+.card--fourth{
+    grid-row: 7 / 13;
+    grid-column: 5 / 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.card--fifth{
+    grid-row: 7 / 13;
+    grid-column: 9 / 13;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+.card--sixth{
+    grid-row: 1/ 7;
+    grid-column: 9 / 13;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    
+}
+
+@media screen and (max-width: 60.5rem){
+    .card--first{
+        display: none;
+    }
+
+    .card--second{
+        grid-row: 1 / 13;
+        font-size: 1rem;
+    }
+
+    .card--third{
+        grid-column: 1 / 5;
+    }
+
+    .card--fourth{
+        display: none;
+    }
+
+    .card--fifth{
+        display: none;
+    }
+
+    .card--sixth{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 62.5rem){
+    .card--third{
+        grid-column: 1 / 13;
+        grid-row: 1 / 13;
+    }
+}
+
+@media screen and (max-width: 37.5rem){
+    .card--first{
+        display: none;
+    }
+
+    .card--second{
+        display: none;
+    }
+
+    .card--third{
+        display: flex;
+    }
+
+    .card--fourth{
+        display: none;
+    }
+
+    .card--fifth{
+        display: none;
+    }
+
+    .card--sixth{
+        display: none;
+    }
+}

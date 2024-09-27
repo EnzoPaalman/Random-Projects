@@ -1,0 +1,6 @@
+print("Hi Henre3ksgamer445")
+print("How was da bugga?")
+input("what did you think of de bugga:")
+print("thats nice, would you like me to call you something else instead of henre3ks?")
+name = input("enter a nickname:")
+print("alright from now on i shall call you: racistcheff21")

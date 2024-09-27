@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <p class="articles">lorem1</p>
+    <p class="articles">lorem2</p>
+    <p class="articles">lorem3</p>
+</body>
+<style>
+    button{
+        width: 4rem;
+        height: 3rem;
+    }
+</style>
+<script>
+    let ourDiv = document.createElement("div");
+    ourDiv.innerText = "wow, made a div";
+    ourDiv.style.background = "red";
+    let body = document.getElementsByTagName("body")[0];
+    body.appendChild(ourDiv);
+
+
+    let myButton = document.createElement("button");
+    body.appendChild(myButton);
+    myButton.style.background = "blue";
+
+    function click(){
+        let myButton = document.createElement("button");
+        myButton.innerText = "my button";
+        myButton.onclick = click;
+        body.appendChild(myButton);
+        console.log("nieuwe button");
+    };
+    myButton.onclick = click;
+</script>
+</html>
+
+

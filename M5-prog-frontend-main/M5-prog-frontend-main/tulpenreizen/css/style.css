@@ -1,0 +1,256 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    background: #16213e;
+}
+
+.nav{
+    width: 100%;
+    background: #053B50;
+    display: flex;
+    justify-content: space-between;
+    min-height: 7rem;
+    align-items: center;
+    color: #eee;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+    font-size: 120%;
+}
+
+.cta{
+    width: 11rem;
+    padding: 0.5rem;
+    font-size: 70%;
+    background: #64CCC5;
+    border: none;
+    color: #eee;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+.cta:hover{
+    cursor: pointer;
+    background: hsl(176, 50%, 60%);
+    transition: 0.2s;
+}
+
+.banner{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.banner > figure{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient( to bottom right,  rgba(22, 33, 62, 0.5), 80%, rgba(100, 204, 197, 0.5)), url(../img/pexels-tanathip-rattanatum-2026451.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.banner > figure > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    color: #eee;
+}
+
+.heading{
+    font-family: 'Great Vibes', cursive;
+    font-size: 500%;
+}
+
+.heading2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 380%;
+}
+
+.logo{
+    font-size: 250%;
+    color: #eee;
+    border: 0.5rem solid #64CCC5;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+.circel_icon{
+    padding: 4rem;
+    height: 80rem;
+    border-bottom: 0.2rem solid #64CCC5;
+}
+
+.circel_icon > header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.circel_icon > header > h2{
+    font-size: 380%;
+    font-family: 'Great Vibes', cursive;
+    color: #eee;
+}
+
+.circel_icon > div{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.circel_icon > div > div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.circel_icon > div > div > p{
+    width: 55ch;
+    color: #eee;
+}
+
+.circel_icon > div > img{
+    width: 40rem;
+    height: 60rem;
+    object-fit: cover;
+}
+
+.kenmerken{
+    height: 100vh;
+    border-bottom: 0.2rem solid #64CCC5;
+    padding: 4rem;
+}
+
+.kenmerken > header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    height: 15%;
+}
+
+.kenmerken > header > h2{
+    font-size: 380%;
+    font-family: 'Great Vibes', cursive;
+    color: #eee;
+}
+
+.onzeKenmerken{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.kenmerk{
+    list-style: none;
+    color: white;
+    flex-shrink: 0;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kenmerk > p{
+    width: 30ch;
+    text-align: center;
+}
+
+.kenmerkIcon{
+    font-size: 180%;
+    border: 0.1rem solid #64CCC5;
+    padding: 2rem;
+    border-radius: 50%;
+}
+
+.gallerij{
+    height: 80vh;
+}
+
+.gallerij > header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6rem;
+}
+
+.gallerij > header > h2{
+    font-size: 380%;
+    font-family: 'Great Vibes', cursive;
+    color: #eee;
+}
+
+.fotos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto{
+    width: 25%;
+    height: 40rem;
+    list-style: none;
+    position: relative;
+}
+
+.foto > section{
+    width: 100%;
+    height: 100%;
+    background: #64CCC5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient( to bottom right,  rgba(22, 33, 62, 0.5), 80%, rgba(100, 204, 197, 0.5));
+    transform: scaleX(0);
+    transition: 0.8s;
+    transform-origin: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto > section > .cta{
+    opacity: 0;
+    transition-delay: 0.8s;
+    transition-duration: 0.2s;
+}
+
+.foto:hover > section > .cta{
+    opacity: 1;
+}
+
+.foto:hover > section{
+    transform: scale(1);
+}
+
+.foto > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

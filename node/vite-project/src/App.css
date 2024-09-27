@@ -1,0 +1,41 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+  }
+  
+  .Card-Holder {
+    background: red;
+    width: 40vw;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .Card-Holder > img {
+    width: 100%;
+  }
+
+.Cat-card > img{
+  width: 50rem;
+
+}
+
+.checkbox {
+  border-radius: 20%;
+  border-style: white solid;
+}
+
+.checkboxes {
+  background: green;
+  
+}

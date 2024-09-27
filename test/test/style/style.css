@@ -1,0 +1,55 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider {
+    overflow: hidden;
+    width: 38rem;
+    height: 20rem;
+    position: relative;
+    margin-top: 5rem;
+}
+
+.slider-inner {
+    display: flex;
+    transition: transform 0.5s;
+}
+
+img {
+    width: 10rem; /* Adjust the image width as needed */
+    height: 10rem; /* Adjust the image height as needed */
+    object-fit: cover;
+    margin-right: 3rem;
+}
+
+.slider-button {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.slider-buttons {
+    display: flex; /* Display buttons in a row */
+    justify-content: center; /* Center buttons horizontally */
+}

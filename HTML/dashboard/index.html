@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+    <script type="module" defer src="resources/js/main.js"></script>
+</head>
+<body id="js--body">
+
+    <!-- widget 1-->
+    <article class="card card--controls">
+        <h2 id="js--slider-text" class="slider-text">0</h2>
+        <input type="range" id="js--slider" class="slider" min="1" max="4" step="1">
+    </article>
+
+    <!-- widget 2 -->
+    <article class="card card--image">
+        <img src="" alt="" id="js--imageView">
+        <button class="btn" id="js--displayButton">Display image</button>
+    </article>
+
+    <!-- widget 3 -->
+    <article class="card card--stopwatch">
+        <div class="counter">
+            <span id="js--minutes">0</span>:<span id="js--seconds">0</span>
+        </div>
+        <section class="btn-wrapper">
+            <button class="btn btn--start" id="js--startButton">Start</button>
+            <button class="btn btn--stop" id="js--stopButton">Stop</button>
+            <button class="btn btn--reset" id="js--resetButton">Reset</button>
+        </section>
+    </article>
+</body>
+</html>

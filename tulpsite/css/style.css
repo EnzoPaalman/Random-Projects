@@ -1,0 +1,360 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /* 1 rem= 10px*/
+    scroll-behavior: smooth;
+}
+
+a, a:visited, a:link{
+    color: #eee;
+    text-decoration: none;
+}
+
+body{
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    background: #16213E;
+}
+
+.nav{
+    width: 100%;
+    height: 10rem;
+    background: rgba(15, 52, 96,0.7);
+    display: flex;  /* alles komt naast elkaar*/
+    justify-content: space-between; /* alles gaat naar een verschillende plek*/
+    min-height: 7rem;
+    align-items: center; /* alles in de nav komt in het midden te staan*/
+    color: #eee;
+    padding: 2rem; /* alles heeft dan 40px afstand*/
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.list{
+    display: flex;
+    list-style: none; /* styling weg*/
+    gap: 4rem;
+    font-size: 130%;
+}
+
+.cta{
+    width: 11rem;
+    padding: 1rem;
+    font-size: 80%;
+    background: #E94560;
+    border: none;
+    color: #eee;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+.cta:hover{
+    cursor: pointer; 
+    background: hsl(350, 70%, 49%);
+    transition: 0.2s;
+}
+
+.banner{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+.banner > figure{
+    height: 100%;
+    width: 100%;
+    background :linear-gradient(to bottom right,rgba(22, 33, 62,0.8), 80%, rgba(233, 69, 96,0.5)),  url(../img/pexels-mabel-amber-141978.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.banner > figure > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    color: #eee;
+}
+
+.heading{
+    font-family: 'Great Vibes', cursive;
+    font-size: 500%;
+}
+
+.heading2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 200%;
+}
+
+.logo{
+    font-size: 250%;
+    color: #eee;
+    border: 0.5rem solid #E94560;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+.over{
+    padding: 4rem;
+    height: 100rem;
+    border-bottom: 0.5rem solid #E94560;
+}
+
+.over > header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.over > header > h2{
+    font-family: 'great vibes', cursive ;
+    color: #eee;
+    font-size: 380%;
+}
+
+.over > div{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    height: 80%;
+}
+
+.over > div > div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.over > div > div > p{
+    width: 55ch;
+    color: #eee;
+}
+
+.over > div > figure > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.over > div > figure{
+    position: relative;
+    width: 40rem;
+    height: 60rem;
+}
+
+.over > div > figure::after{
+    content: "";
+    background :linear-gradient(to bottom right,rgba(22, 33, 62,0.8), 80%, rgba(233, 69, 96,0.5));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.kenmerken{
+    height: 110vh;
+    border-bottom: 0.5rem solid #E94560;
+    padding: 4rem;
+}
+
+.kenmerken > header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    height: 20%;
+}
+
+.kenmerken > header > h2{
+    font-family: 'great vibes', cursive ;
+    color: #eee;
+    font-size: 380%;
+}
+
+.onzeKenmerken{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.kenmerk{
+    list-style: none;
+    color: #eee;
+    width:calc(50%-8rem) ;
+    flex-shrink: 0;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kenmerk > p{
+    width: 40ch;
+    text-align: center;
+}
+
+.kenmerkIcon{
+    font-size: 180%;
+    border: 0.2rem solid #E94560;
+    padding: 2rem;
+    border-radius: 50%;
+}
+
+.gallerij{
+    height: 80vh;
+}
+
+.gallerij > header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6rem;
+}
+
+.gallerij > header > h2{
+    font-family: 'great vibes', cursive ;
+    color: #eee;
+    font-size: 380%;
+}
+
+.fotos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto{
+    width: 25%;
+    height: 40rem;
+    list-style: none;
+    position: relative;
+}
+
+.foto > section{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background :linear-gradient(to bottom right,rgba(22, 33, 62,0.8), 80%, rgba(233, 69, 96,0.5));
+    transform: scaleX(0);
+    transition: 0.8s;
+    transform-origin: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto > section > .cta{
+    opacity: 0;
+    transition-delay: 0.8s;
+    transition-duration: 0.2s;
+}
+
+.foto:hover > section > .cta{
+    opacity: 1;
+}
+
+.foto:hover > section{
+    transform: scale(1);
+}
+
+.foto > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 75rem){
+    body{
+        font-size: 1.6rem;
+    }
+    .banner{
+        height: 140rem;
+    }
+    .over{
+        min-height: 120rem;
+    }
+
+    .over > header{
+        height: 20%;
+    }
+
+    .over > div {
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .over > div > div{
+        height: 60%;
+    }
+
+    .over > div > div > p{ 
+        width: 100%;
+        color: #eee;
+    }
+
+    .over > div > figure{
+        position: relative;
+        width: 100%;
+        height: 40%;
+    }
+
+    .kenmerken{
+        min-height: 120rem;
+    }
+
+    .kenmerk{
+        width: 100%;
+    }
+
+    .gallerij{
+        height: auto;
+    }
+
+    .fotos{
+        flex-wrap: wrap;
+    }
+
+    .foto{
+        height: 20rem;
+        width: 100%;
+    }
+
+    
+    .foto:hover > section > .cta{
+            opacity: 0;
+        }
+
+    .foto:hover > section{
+            transform: scale(0);
+}
+    
+
+}  
+
+@media screen and (max-width: 50rem){
+    .list{
+        flex-direction: column;
+        gap: 0;
+    }
+}

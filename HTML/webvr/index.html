@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vr website</title>
+    <script src="js/aframe.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <a-scene stats>
+        <a-sky color="lightblue"></a-sky>
+        <a-camera>
+            <a-cursor id="js--cursor" color="black"></a-cursor>
+        </a-camera>
+        <a-box id="js--box" position="0 2 -4" color="black"></a-box>
+        <a-sphere id="js--sphere--red" position="-10 1 0" color="red"></a-sphere>
+        <a-box position="0 4 -20" color="red">
+            <s-sound src="mp3/Voicy_mining away.mp3" autoplay="true"></s-sound>
+        </a-box>
+        <!-- eerste rij-->
+        <a-box id="js--box" position="0 0 0" color="black"></a-box>
+        <a-box id="js--box" position="0 0 0" color="black"></a-box>
+        <a-box id="js--box" position="0 0 0" color="black"></a-box>
+        <a-box id="js--box" position="0 0 0" color="black"></a-box>
+        <!-- tweede rij-->
+        <a-box id="js--box" position="0 0 0" color="black"></a-box>
+        <a-box id="js--box" position="0 0 0" color="black"></a-box>
+        <a-box id="js--box" position="0 0 0" color="black"></a-box>
+        <a-box id="js--box" position="0 0 0" color="black"></a-box>
+
+        <!-- derde rij-->
+        <a-box id="js--box" position="0 0 0" color="black"></a-box>
+        <a-box id="js--box" position="0 0 0" color="black"></a-box>
+        <a-box id="js--box" position="0 0 0" color="black"></a-box>
+        <a-box id="js--box" position="0 0 0" color="black"></a-box>
+        <!-- spheres-->
+        
+        
+        
+        <a-box animation="property:position; pauseEvents:mouseenter; resumeEvents:mouseleave; dir:alternate; to:-5 -4 0; dur:8000; loop:true;" position="-5 4 0" color="purple"></a-box>
+        <a-box animation="property:rotation; to:0 360 0; resumeEvents:mouseenter; autoplay:false; dur:5000; easing:linear; loop:true;" src="img/polished-diamond.png" position="3 2 -4"></a-box>
+
+        <a-sphere position="0 10 0" color="orange"></a-sphere>
+        <a-sphere animation="property: color; to:#00FF00; dur:3000; easing:linear;" position="-3 4 -8" color="blue"></a-sphere>
+
+        <a-plane rotation="-90 0 0" position="-3 -2 -8" color="orange" height="30" width="30"></a-plane>
+    </a-scene>
+</body>
+</html>
